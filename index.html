@@ -23,22 +23,7 @@
                     id="animated-asset"
                     src="assets/asset.glb"
                 ></a-asset-item>
-                <a-asset-item
-                    id="cpu"
-                    src="assets/cpu.glb"
-                ></a-asset-item>
-                <a-asset-item
-                    id="ram"
-                    src="assets/ram.glb"
-                ></a-asset-item>
-                <a-asset-item
-                    id="ssd"
-                    src="assets/ssd.glb"
-                ></a-asset-item>
-                <a-asset-item
-                    id="vga"
-                    src="assets/vga.glb"
-                ></a-asset-item>
+                
             </a-assets>
             <!--------------------------------1----------------------------->
             <a-marker
@@ -60,87 +45,7 @@
                     gesture-handler
                 ></a-entity>
             </a-marker>
-            <!-----------------------------------2--------------------------->
-            <a-marker
-                id="animated-marker1"
-                type="pattern"
-                preset="custom"
-                url="assets/pattern-cpu.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
-                <a-entity
-                    id="cpu"
-                    scale="1.00 1.00 1.00"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#cpu"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
-            </a-marker>
-            <!---------------------------------------3----------------------------->
-            <a-marker
-                id="animated-marker2"
-                type="pattern"
-                preset="custom"
-                url="assets/pattern-ram.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA2"
-            >
-                <a-entity
-                    id="ram"
-                    scale="1.50 1.50 1.50"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#ram"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
-            </a-marker>
-            <!------------------------------------4---------------------------->
-            <a-marker
-                id="animated-marker3"
-                type="pattern"
-                preset="custom"
-                url="assets/pattern-ssd.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA3"
-            >
-                <a-entity
-                    id="ssd"
-                    scale="1.50 1.50 1.50"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#ssd"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
-            </a-marker>
-            <!----------------------------------------5-------------------------->
-            <a-marker
-                id="animated-marker4"
-                type="pattern"
-                preset="custom"
-                url="assets/pattern-vga.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA4"
-            >
-                <a-entity
-                    id="vga"
-                    scale="1.50 1.50 1.50"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#vga"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
-            </a-marker>
-            
+                        
             <a-entity camera></a-entity>
         </a-scene>
     </body>
