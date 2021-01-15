@@ -24,7 +24,7 @@
                     src="assets/asset.glb"
                 ></a-asset-item>
                 <a-asset-item
-                    id="cpu"
+                    id="animated-asset1"
                     src="assets/cpu.glb"
                 ></a-asset-item>
             </a-assets>
@@ -50,18 +50,18 @@
             </a-marker>
             <!-----------------------------------2--------------------------->
             <a-marker
-                id="cpu"
+                id="animated-marker1"
                 type="pattern"
                 preset="custom"
                 url="assets/pattern-cpu.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA1"
+                id="markerA"
             >
                 <a-entity
-                    id="cpu"
-                    scale="0.03950757052984271 0.03950757052984271 0.03950757052984271"
+                    id="bowser-model1"
+                    scale="0.50 0.50 0.50"
                     animation-mixer="loop: repeat"
                     gltf-model="#cpu"
                     class="clickable"
