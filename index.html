@@ -35,8 +35,12 @@
                     id="animated-asset3"
                     src="assets/ssd.glb"
                 ></a-asset-item>
+                <a-asset-item
+                    id="animated-asset4"
+                    src="assets/vga.glb"
+                ></a-asset-item>
             </a-assets>
-
+            <!--------------------------------1----------------------------->
             <a-marker
                 id="animated-marker"
                 type="pattern"
@@ -116,6 +120,27 @@
                     gesture-handler
                 ></a-entity>
             </a-marker>
+            <!----------------------------------------5-------------------------->
+            <a-marker
+                id="animated-marker4"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-vga.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model4"
+                    scale="1.50 1.50 1.50"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#vga"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+            
             <a-entity camera></a-entity>
         </a-scene>
     </body>
