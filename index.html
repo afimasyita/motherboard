@@ -27,6 +27,14 @@
                     id="animated-asset1"
                     src="assets/cpu.glb"
                 ></a-asset-item>
+                <a-asset-item
+                    id="animated-asset2"
+                    src="assets/ram.glb"
+                ></a-asset-item>
+                <a-asset-item
+                    id="animated-asset3"
+                    src="assets/ssd.glb"
+                ></a-asset-item>
             </a-assets>
 
             <a-marker
@@ -68,7 +76,46 @@
                     gesture-handler
                 ></a-entity>
             </a-marker>
-
+            <!---------------------------------------3----------------------------->
+            <a-marker
+                id="animated-marker2"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-ram.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model2"
+                    scale="1.50 1.50 1.50"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#ram"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+            <!------------------------------------4---------------------------->
+            <a-marker
+                id="animated-marker3"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-ssd.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model3"
+                    scale="1.50 1.50 1.50"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#ssd"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
